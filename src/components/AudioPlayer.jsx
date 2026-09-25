@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const bars = Array.from({ length: 48 }, (_, i) => 8 + ((i * 17 + i * i * 7) % 36));
 const time = value => `${Math.floor(value / 60).toString().padStart(2, '0')}:${Math.floor(value % 60).toString().padStart(2, '0')}`;
 
-export default function AudioPlayer({ src, onComplete, renderActions, suspended = false, startTime = 0, clipDuration = 18 }) {
+export default function AudioPlayer({ src, onComplete, renderActions, suspended = false, startTime = 0, clipDuration = 15 }) {
   const ref = useRef(null);
   const count = useRef(0);
   const finished = useRef(false);

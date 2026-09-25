@@ -1,8 +1,9 @@
 import React from 'react';
 import AnswerReveal from '../components/AnswerReveal';
+import Confetti from '../components/Confetti';
 
 export default function AnswerPage({ question, onNext, isLast }) {
-  return <section className="answer-page page-enter" aria-label="Kino javobi">
+  return <><Confetti /><section className="answer-page page-enter" aria-label="Kino javobi">
     <AnswerReveal
       answer={question.answer}
       title={question.title}
@@ -11,5 +12,5 @@ export default function AnswerPage({ question, onNext, isLast }) {
       onNext={onNext}
       isLast={isLast}
     />
-  </section>;
+  </section></>;
 }
