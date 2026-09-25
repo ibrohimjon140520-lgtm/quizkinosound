@@ -34,13 +34,12 @@ export default function Quiz({ questions, initialIndex = 0, onQuestionComplete, 
       renderActions={({ canReplay, replay }) => <div className="quiz-action">
         <div className="quiz-buttons">
           <button type="button" className="button" disabled={!canReplay} onClick={replay}>QAYTA TINGLASH <span aria-hidden="true">↻</span></button>
-          <button type="button" className="button" disabled={phase !== 'ready'} onClick={() => {
-            if (phase !== 'ready') return;
+          <button type="button" className="button" onClick={() => {
             if (completed >= 2) setPhase('countdown');
             else setConfirmOpen(true);
           }}>JAVOBNI KO‘RISH <span aria-hidden="true">→</span></button>
         </div>
-        <p className="action-hint">{phase === 'watching' ? 'Musiqani bir marta tinglagach javobni ochishingiz mumkin.' : 'Javobingiz tayyormi? Keling, tekshiramiz.'}</p>
+        <p className="action-hint">Javobingiz tayyormi? Istalgan payt tekshirishingiz mumkin.</p>
       </div>}
     />
     {confirmOpen && <ConfirmAnswer onCancel={() => setConfirmOpen(false)} onConfirm={() => { setConfirmOpen(false); setPhase('countdown'); }} />}

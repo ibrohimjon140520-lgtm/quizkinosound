@@ -26,8 +26,8 @@ Yangi savol uchun audio, rasm va data obyektini qo‘shing. UI sonni avtomatik h
 
 Boshlash → 15 ta soundtrackdan birini tanlash → play tugmasi bilan tinglash. Playerda pause, vaqt va ijro progressini ko‘rsatuvchi dekorativ tovush chiziqlari bor; chiziqlar haqiqiy audio amplitudasi emas. Oldinga o‘tkazish yo‘q.
 
-Bir to‘liq ijrodan keyin javob tugmasi faollashadi. Bosilganda “Rostdan ham javobni topdingizmi?” modali chiqadi. Qayta tinglab, ikkinchi ijroni ham tugatganda modal chiqmaydi. Keyin alohida sahifada 5 soniya countdown, undan keyin kino rasmi va sarlavhasi ochiladi.
+Javob tugmasi doim faol: audio boshlanmasidan yoki tugamasidan ham bosish mumkin. Bosilganda “Rostdan ham javobni topdingizmi?” modali chiqadi. Qayta tinglab, ikkinchi ijroni ham tugatganda modal chiqmaydi. Keyin alohida sahifada 5 soniya countdown, undan keyin kino rasmi va sarlavhasi ochiladi.
 
-Keyingi savol tugmasi tanlash sahifasiga qaytaradi. Yakunlangan kartochka belgilanadi. Barcha savollar tugagach natija chiqadi. Audio yo‘q bo‘lsa, tushunarli xabar ko‘rsatiladi va javob bloklanadi.
+Keyingi savol tugmasi tanlash sahifasiga qaytaradi. Yakunlangan kartochka belgilanadi. Barcha savollar tugagach natija chiqadi. Audio yo‘q bo‘lsa, tushunarli xabar ko‘rsatiladi; javob tugmasi faol qoladi.
 
 Audio parchalari 15 soniya ijro etiladi. Merlin 20-soniyadan boshlanib, 35-soniyada to‘xtaydi. Qayta tinglash ham shu parchani ijro etadi. Countdown tugagach javob ochilganda oq va ko‘k konfetti bir marta otiladi; animatsiyalarni kamaytirish sozlamasi yoqilganida effekt o‘chadi.
