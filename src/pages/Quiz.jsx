@@ -27,6 +27,8 @@ export default function Quiz({ questions, initialIndex = 0, onQuestionComplete, 
     <AudioPlayer
       key={question.id}
       src={question.audio}
+      startTime={question.startTime || 0}
+      clipDuration={18}
       suspended={confirmOpen}
       onComplete={count => { setCompleted(count); setPhase('ready'); }}
       renderActions={({ canReplay, replay }) => <div className="quiz-action">
