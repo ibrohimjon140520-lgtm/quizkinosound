@@ -8,7 +8,6 @@ import ConfirmAnswer from '../components/ConfirmAnswer';
 export default function Quiz({ questions, initialIndex = 0, onQuestionComplete, isFinalQuestion, onBack }) {
   const index = initialIndex;
   const [phase, setPhase] = useState('watching');
-  const [completed, setCompleted] = useState(0);
   const [confirmOpen, setConfirmOpen] = useState(false);
   const question = questions[index];
   useEffect(() => {
@@ -30,13 +29,12 @@ export default function Quiz({ questions, initialIndex = 0, onQuestionComplete, 
       startTime={question.startTime || 0}
       clipDuration={15}
       suspended={confirmOpen}
-      onComplete={count => { setCompleted(count); setPhase('ready'); }}
+      onComplete={() => setPhase('ready')}
       renderActions={({ canReplay, replay }) => <div className="quiz-action">
         <div className="quiz-buttons">
           <button type="button" className="button" disabled={!canReplay} onClick={replay}>QAYTA TINGLASH <span aria-hidden="true">↻</span></button>
           <button type="button" className="button" onClick={() => {
-            if (completed >= 2) setPhase('countdown');
-            else setConfirmOpen(true);
+            setConfirmOpen(true);
           }}>JAVOBNI KO‘RISH <span aria-hidden="true">→</span></button>
         </div>
         <p className="action-hint">Javobingiz tayyormi? Istalgan payt tekshirishingiz mumkin.</p>

@@ -26,7 +26,7 @@ Yangi savol uchun audio, rasm va data obyektini qo‘shing. UI sonni avtomatik h
 
 Boshlash → 15 ta soundtrackdan birini tanlash → play tugmasi bilan tinglash. Playerda pause, vaqt va ijro progressini ko‘rsatuvchi dekorativ tovush chiziqlari bor; chiziqlar haqiqiy audio amplitudasi emas. Oldinga o‘tkazish yo‘q.
 
-Javob tugmasi doim faol: audio boshlanmasidan yoki tugamasidan ham bosish mumkin. Bosilganda “Rostdan ham javobni topdingizmi?” modali chiqadi. Qayta tinglab, ikkinchi ijroni ham tugatganda modal chiqmaydi. Keyin alohida sahifada 5 soniya countdown, undan keyin kino rasmi va sarlavhasi ochiladi.
+Javob tugmasi doim faol: audio boshlanmasidan yoki tugamasidan ham bosish mumkin. Bosilganda “Rostdan ham javobni topdingizmi?” modali chiqadi. Tasdiqlash modali har safar chiqadi, shu jumladan ikki marta tinglangandan keyin ham. Keyin alohida sahifada 5 soniya countdown, undan keyin kino rasmi va sarlavhasi ochiladi.
 
 Keyingi savol tugmasi tanlash sahifasiga qaytaradi. Yakunlangan kartochka belgilanadi. Barcha savollar tugagach natija chiqadi. Audio yo‘q bo‘lsa, tushunarli xabar ko‘rsatiladi; javob tugmasi faol qoladi.
 
